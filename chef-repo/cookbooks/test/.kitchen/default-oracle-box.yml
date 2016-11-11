@@ -1,0 +1,6 @@
+---
+hostname: 127.0.0.1
+port: '2201'
+username: vagrant
+ssh_key: C:/Users/hnallabo/.vagrant.d/boxes/oracle_box/0/virtualbox/vagrant_private_key
+last_action: create

@@ -1,0 +1,25 @@
+I, [2016-11-08T14:06:03.917846 #2588]  INFO -- default-oracle-box: -----> Converging <default-oracle-box>...
+I, [2016-11-08T14:06:03.922347 #2588]  INFO -- default-oracle-box: Preparing files for transfer
+I, [2016-11-08T14:06:03.922847 #2588]  INFO -- default-oracle-box: Preparing dna.json
+I, [2016-11-08T14:06:03.925848 #2588]  INFO -- default-oracle-box: Resolving cookbook dependencies with Berkshelf 5.1.0...
+E, [2016-11-08T14:06:04.226908 #2588] ERROR -- default-oracle-box: Converge failed on instance <default-oracle-box>.
+E, [2016-11-08T14:06:04.227408 #2588] ERROR -- default-oracle-box: ------Exception-------
+E, [2016-11-08T14:06:04.227408 #2588] ERROR -- default-oracle-box: Class: ArgumentError
+E, [2016-11-08T14:06:04.227408 #2588] ERROR -- default-oracle-box: Message: unsupported proxy https://adc-proxy.oracle.com/
+E, [2016-11-08T14:06:04.227908 #2588] ERROR -- default-oracle-box: ----------------------
+E, [2016-11-08T14:06:04.227908 #2588] ERROR -- default-oracle-box: ------Backtrace-------
+E, [2016-11-08T14:06:04.227908 #2588] ERROR -- default-oracle-box: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient.rb:506:in `proxy='
+E, [2016-11-08T14:06:04.228408 #2588] ERROR -- default-oracle-box: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient.rb:1071:in `load_environment'
+E, [2016-11-08T14:06:04.228408 #2588] ERROR -- default-oracle-box: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient.rb:447:in `initialize'
+E, [2016-11-08T14:06:04.228408 #2588] ERROR -- default-oracle-box: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/adapter/httpclient.rb:7:in `new'
+E, [2016-11-08T14:06:04.228408 #2588] ERROR -- default-oracle-box: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/adapter/httpclient.rb:7:in `client'
+E, [2016-11-08T14:06:04.228908 #2588] ERROR -- default-oracle-box: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/adapter/httpclient.rb:14:in `call'
+E, [2016-11-08T14:06:04.228908 #2588] ERROR -- default-oracle-box: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/request/retry.rb:116:in `call'
+E, [2016-11-08T14:06:04.228908 #2588] ERROR -- default-oracle-box: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/response.rb:8:in `call'
+E, [2016-11-08T14:06:04.229409 #2588] ERROR -- default-oracle-box: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/rack_builder.rb:139:in `build_response'
+E, [2016-11-08T14:06:04.229409 #2588] ERROR -- default-oracle-box: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/connection.rb:377:in `run_request'
+E, [2016-11-08T14:06:04.229409 #2588] ERROR -- default-oracle-box: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/connection.rb:140:in `get'
+E, [2016-11-08T14:06:04.229409 #2588] ERROR -- default-oracle-box: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/berkshelf-api-client-3.0.0/lib/berkshelf/api_client/connection.rb:60:in `universe'
+E, [2016-11-08T14:06:04.229409 #2588] ERROR -- default-oracle-box: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/berkshelf-5.1.0/lib/berkshelf/source.rb:48:in `build_universe'
+E, [2016-11-08T14:06:04.229409 #2588] ERROR -- default-oracle-box: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/berkshelf-5.1.0/lib/berkshelf/installer.rb:21:in `block (2 levels) in build_universe'
+E, [2016-11-08T14:06:04.229409 #2588] ERROR -- default-oracle-box: ----End Backtrace-----

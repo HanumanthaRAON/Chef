@@ -1,0 +1,66 @@
+I, [2016-11-08T14:06:01.024268 #2588]  INFO -- Kitchen: -----> Starting Kitchen (v1.13.2)
+I, [2016-11-08T14:06:03.917846 #2588]  INFO -- Kitchen: -----> Converging <default-oracle-box>...
+E, [2016-11-08T14:06:04.233909 #2588] ERROR -- Kitchen: ------Exception-------
+E, [2016-11-08T14:06:04.234410 #2588] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2016-11-08T14:06:04.234410 #2588] ERROR -- Kitchen: Message: 1 actions failed.
+>>>>>>     Failed to complete #converge action: [unsupported proxy https://adc-proxy.oracle.com/] on default-oracle-box
+E, [2016-11-08T14:06:04.234410 #2588] ERROR -- Kitchen: ----------------------
+E, [2016-11-08T14:06:04.234410 #2588] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-11-08T14:06:04.234910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:187:in `report_errors'
+E, [2016-11-08T14:06:04.234910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:178:in `run_action'
+E, [2016-11-08T14:06:04.234910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command/action.rb:39:in `block in call'
+E, [2016-11-08T14:06:04.234910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-11-08T14:06:04.234910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command/action.rb:37:in `call'
+E, [2016-11-08T14:06:04.234910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/cli.rb:56:in `perform'
+E, [2016-11-08T14:06:04.235410 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/cli.rb:186:in `block (2 levels) in <class:CLI>'
+E, [2016-11-08T14:06:04.235410 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2016-11-08T14:06:04.235410 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2016-11-08T14:06:04.235410 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/cli.rb:334:in `invoke_task'
+E, [2016-11-08T14:06:04.235410 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2016-11-08T14:06:04.235410 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2016-11-08T14:06:04.235410 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/bin/kitchen:13:in `block in <top (required)>'
+E, [2016-11-08T14:06:04.235910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/errors.rb:174:in `with_friendly_errors'
+E, [2016-11-08T14:06:04.235910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/bin/kitchen:13:in `<top (required)>'
+E, [2016-11-08T14:06:04.235910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:24:in `load'
+E, [2016-11-08T14:06:04.235910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:24:in `<main>'
+E, [2016-11-08T14:06:04.235910 #2588] ERROR -- Kitchen: ----End Backtrace-----
+E, [2016-11-08T14:06:04.235910 #2588] ERROR -- Kitchen: -Composite Exception--
+E, [2016-11-08T14:06:04.235910 #2588] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2016-11-08T14:06:04.236410 #2588] ERROR -- Kitchen: Message: Failed to complete #converge action: [unsupported proxy https://adc-proxy.oracle.com/] on default-oracle-box
+E, [2016-11-08T14:06:04.236410 #2588] ERROR -- Kitchen: ----------------------
+E, [2016-11-08T14:06:04.236410 #2588] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-11-08T14:06:04.236410 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient.rb:506:in `proxy='
+E, [2016-11-08T14:06:04.236410 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient.rb:1071:in `load_environment'
+E, [2016-11-08T14:06:04.236410 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient.rb:447:in `initialize'
+E, [2016-11-08T14:06:04.236910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/adapter/httpclient.rb:7:in `new'
+E, [2016-11-08T14:06:04.236910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/adapter/httpclient.rb:7:in `client'
+E, [2016-11-08T14:06:04.236910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/adapter/httpclient.rb:14:in `call'
+E, [2016-11-08T14:06:04.236910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/request/retry.rb:116:in `call'
+E, [2016-11-08T14:06:04.236910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/response.rb:8:in `call'
+E, [2016-11-08T14:06:04.236910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/rack_builder.rb:139:in `build_response'
+E, [2016-11-08T14:06:04.236910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/connection.rb:377:in `run_request'
+E, [2016-11-08T14:06:04.236910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/connection.rb:140:in `get'
+E, [2016-11-08T14:06:04.237410 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/berkshelf-api-client-3.0.0/lib/berkshelf/api_client/connection.rb:60:in `universe'
+E, [2016-11-08T14:06:04.237410 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/berkshelf-5.1.0/lib/berkshelf/source.rb:48:in `build_universe'
+E, [2016-11-08T14:06:04.237410 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/berkshelf-5.1.0/lib/berkshelf/installer.rb:21:in `block (2 levels) in build_universe'
+E, [2016-11-08T14:06:04.237410 #2588] ERROR -- Kitchen: ----End Backtrace-----
+E, [2016-11-08T14:06:04.237410 #2588] ERROR -- Kitchen: ---Nested Exception---
+E, [2016-11-08T14:06:04.237410 #2588] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2016-11-08T14:06:04.237410 #2588] ERROR -- Kitchen: Message: Failed to complete #converge action: [unsupported proxy https://adc-proxy.oracle.com/]
+E, [2016-11-08T14:06:04.237910 #2588] ERROR -- Kitchen: ----------------------
+E, [2016-11-08T14:06:04.237910 #2588] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-11-08T14:06:04.237910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient.rb:506:in `proxy='
+E, [2016-11-08T14:06:04.237910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient.rb:1071:in `load_environment'
+E, [2016-11-08T14:06:04.237910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient.rb:447:in `initialize'
+E, [2016-11-08T14:06:04.237910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/adapter/httpclient.rb:7:in `new'
+E, [2016-11-08T14:06:04.238410 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/adapter/httpclient.rb:7:in `client'
+E, [2016-11-08T14:06:04.238410 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/adapter/httpclient.rb:14:in `call'
+E, [2016-11-08T14:06:04.238410 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/request/retry.rb:116:in `call'
+E, [2016-11-08T14:06:04.238410 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/response.rb:8:in `call'
+E, [2016-11-08T14:06:04.238410 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/rack_builder.rb:139:in `build_response'
+E, [2016-11-08T14:06:04.238410 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/connection.rb:377:in `run_request'
+E, [2016-11-08T14:06:04.238910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/faraday-0.9.2/lib/faraday/connection.rb:140:in `get'
+E, [2016-11-08T14:06:04.238910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/berkshelf-api-client-3.0.0/lib/berkshelf/api_client/connection.rb:60:in `universe'
+E, [2016-11-08T14:06:04.238910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/berkshelf-5.1.0/lib/berkshelf/source.rb:48:in `build_universe'
+E, [2016-11-08T14:06:04.238910 #2588] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/berkshelf-5.1.0/lib/berkshelf/installer.rb:21:in `block (2 levels) in build_universe'
+E, [2016-11-08T14:06:04.238910 #2588] ERROR -- Kitchen: ----End Backtrace-----
